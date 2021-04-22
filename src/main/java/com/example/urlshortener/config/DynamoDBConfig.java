@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
 @Configuration
+@EnableDynamoDBRepositories(basePackages = {"com.example.urlshortener.DynamodbRepository"})
 public class DynamoDBConfig {
 
     @Value("${endpoint}")
